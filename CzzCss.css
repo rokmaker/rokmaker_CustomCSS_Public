@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&display=swap");
+
+/* 배지 삭제 */
+
+.live_chatting_username_wrapper__iJpJB {
+    display: none !important;
+}
+
+/* 닉네임 삭제*/
+
+.live_chatting_username_nickname__dDbbj {
+    display: none !important;
+}
+
+/* 메세지 폰트 변경*/
+
+.live_chatting_message_text__DyleH {
+    font-family: 'Gothic A1', sans-serif !important;
+    font-size: 20px !important;
+    line-height: normal !important;
+    text-shadow: -2px -2px #000000,-2px -1px #000000,-2px 0px #000000,-2px 1px #000000,-2px 2px #000000,-1px -2px #000000,-1px -1px #000000,-1px 0px #000000,-1px 1px #000000,-1px 2px #000000,0px -2px #000000,0px -1px #000000,0px 0px #000000,0px 1px #000000,0px 2px #000000,1px -2px #000000,1px -1px #000000,1px 0px #000000,1px 1px #000000,1px 2px #000000,2px -2px #000000,2px -1px #000000,2px 0px #000000,2px 1px #000000,2px 2px #000000;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.live_overlay_message__lLCT1{
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.live_chatting_message_container__vrI-y.live_chatting_message_is_overlay__cALCf .live_chatting_message_wrapper__xpYre {
+    font-size: 32px !important;
+    line-height: 35px !important;
+    padding: 8px 16px !important;
+}
