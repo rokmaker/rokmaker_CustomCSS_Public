@@ -1,36 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&display=swap");
 
-/* 배지 삭제 */
+:root{
+    --size: 32px;
+    --gap: 0.2em;
 
-.live_chatting_username_wrapper__iJpJB {
+    --text-size: 1em;
+    --text-color: #FFFFFF;
+    --text-spacing: -0.5px;
+    --text-height: 1.3em;
+
+    --nickname-size: 1em;
+    --nickname-gap: 0.1em;
+
+    --container-color: #000000B5;
+    --container-padding: 0.4em;
+    --container-roundness: 0.5em;
+}
+
+[class*='live_overlay_chatting'] {
+    padding: 3px !important;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: var(--text-size);
+    color: var(--text-color);
+    letter-spacing: var(--text-spacing);
+    line-height: var(--text-height);
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+}
+
+div[class*='live_overlay_item'] {
+    margin: var(--gap) 0 !important;
+}
+
+div[class*='live_overlay_message'] {
+    max-width: 100% !important;
+    background: transparent !important;
+    animation: none !important;
+}
+
+div[class*='live_chatting_message_wrapper'] {
+    font-size: var(--size) !important;
+    text-shadow: -3px -3px 0 #000000CC,-3px 0px 0 #000000CC,-3px 3px 0 #000000CC,0px -3px 0 #000000CC,0px 0px 0 #000000CC,0px 3px 0 #000000CC,3px -3px 0 #000000CC,3px 0px 0 #000000CC,3px 3px 0 #000000CC,0 0 3px #000000CC !important;
+    line-height: var(--text-height) !important;
+    letter-spacing: var(--text-spacing) !important;
+    -webkit-font-smoothing: antialiased !important;
+
+    padding: 0 !important;
+}
+
+span[class*='live_chatting_username_container'] {
     display: none !important;
 }
-
-/* 닉네임 삭제*/
-
-.live_chatting_username_nickname__dDbbj {
-    display: none !important;
+span[class*='live_chatting_message_text'] {
+    font-size: var(--text-size) !important;
+    color: var(--text-color) !important;
 }
 
-/* 메세지 폰트 변경*/
+span[class*='live_chatting_message_text'] > img,
+span[class*='live_chatting_message_text'] > svg {
+    margin: -0.2em 0 0 0 !important;
+    vertical-align: middle !important;
 
-.live_chatting_message_text__DyleH {
-    font-family: 'Gothic A1', sans-serif !important;
-    font-size: 20px !important;
-    line-height: normal !important;
-    text-shadow: -2px -2px #000000,-2px -1px #000000,-2px 0px #000000,-2px 1px #000000,-2px 2px #000000,-1px -2px #000000,-1px -1px #000000,-1px 0px #000000,-1px 1px #000000,-1px 2px #000000,0px -2px #000000,0px -1px #000000,0px 0px #000000,0px 1px #000000,0px 2px #000000,1px -2px #000000,1px -1px #000000,1px 0px #000000,1px 1px #000000,1px 2px #000000,2px -2px #000000,2px -1px #000000,2px 0px #000000,2px 1px #000000,2px 2px #000000;
-    background-color: transparent !important;
-    border: none !important;
+    height: 1.6em !important;
+    width: auto !important;
 }
 
-.live_overlay_message__lLCT1{
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-.live_chatting_message_container__vrI-y.live_chatting_message_is_overlay__cALCf .live_chatting_message_wrapper__xpYre {
-    font-size: 32px !important;
-    line-height: 35px !important;
-    padding: 8px 16px !important;
+span[class*='badge_container'] > img,
+span[class*='badge_container'] > svg {
+    height: 1em !important;
+    width: auto !important;
 }
